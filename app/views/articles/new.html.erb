@@ -1,0 +1,9 @@
+<h2 class="display-4">New article</h2>
+
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.submit class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "See all articles", articles_path, class: "btn btn-outline-secondary mt-4" %>

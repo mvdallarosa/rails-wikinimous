@@ -1,0 +1,6 @@
+<% @articles.each do |article| %>
+  <blockquote class="blockquote p-3 mb-4 bg-light text-dark">
+    <p class="mb-0"><%= link_to "#{article.title}", article_path(article) %></p>
+    <footer class="blockquote-footer"><%= article.content %></footer>
+  </blockquote>
+<% end %>

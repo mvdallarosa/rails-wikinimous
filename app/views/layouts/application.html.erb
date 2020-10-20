@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light mb-4">
+      <a class="navbar-brand" href="/articles">Harry Potter News</a>
+      <a class="navbar-brand" href="/articles/new">New Article</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

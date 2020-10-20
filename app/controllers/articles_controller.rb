@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
   def create
-    @article = Article.create
+    @article = Article.new(article_params)
+    @article.save
     redirect_to article_path(@article)
   end
   def new
